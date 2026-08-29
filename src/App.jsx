@@ -7,6 +7,7 @@ import CheckoutPage from "./pages/CheckoutPage.jsx";
 import DashboardPage from "./pages/DashboardPage.jsx";
 import ProductDetailsPage from "./pages/ProductDetailsPage.jsx";
 import ProductsPage from "./pages/ProductsPage.jsx";
+import AllCategoriesPage from "./pages/AllCategoriesPage.jsx";
 import SignInPage from "./pages/SignInPage.jsx";
 import SignUpPage from "./pages/SignUpPage.jsx";
 import { AuthProvider } from "./context/AuthContext.jsx";
@@ -20,6 +21,7 @@ function App() {
           <Route element={<MainLayout />}>
             <Route path="/" element={<ProductsPage />} />
             <Route path="/catalog" element={<ProductsPage />} />
+            <Route path="/all-categories" element={<AllCategoriesPage />} />
             <Route path="/products/:productId" element={<ProductDetailsPage />} />
             <Route path="/cart" element={<CartPage />} />
             <Route element={<GuestRoute />}>
